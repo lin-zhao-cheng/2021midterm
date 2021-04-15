@@ -111,14 +111,76 @@
 } 
   */
 .nav-bar {
+  /* position: relative; */
   display: flex;
   background: #1F2240;
+  position: fixed;
+  width: 100vw;
+  justify-content:space-between;
+  align-items:center;
   /* width: 100vw; */
   /* flex-direction: row;
   justify-content: space-around;
   margin-top: 3rem;
   margin-bottom: 2rem; */
 }
+.navbar-r{
+  display: flex;
+  flex-direction: row;
+  margin-right: 50px;
+}
+.navbar-l{
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+}
+.navbar-logo{
+  width: 179px;
+  height: 65px;
+}
+/* .navbar-search{
+  width: 403px;
+} */
+.navbar-search{
+  display: flex;
+  flex-direction: row;
+  width: 403px;
+  height: 39px;
+  background-color: aliceblue;
+  border-radius: 14px;
+  justify-content:space-between;
+  align-items:center;
+  margin-left: 10px;
+  align-self:center;
+}
+.navsearch-text{
+  
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  margin-left: 15px;
+  
+
+
+color: #9A9898;
+
+}
+.navbar-searchicon{
+  
+  width: 28px;
+  height: 28px;
+  
+  margin-right: 7px;
+}
+.navbar-icon{
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
 /*
 .nav-item {
   font-size: 1rem;
@@ -139,6 +201,7 @@
 }
 
 
+
 .hr-header-line {
   margin: 25px auto 30px;
   padding: 0;
@@ -149,6 +212,9 @@
   border-radius: 50%;
   opacity: 1;
 }
+
+
+
 
 
 

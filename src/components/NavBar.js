@@ -1,9 +1,26 @@
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
+import nlogo from "../images/logo.png";
+import nmember from "../images/nav-member.png";
+import nbag from "../images/nav-shopbag.png";
+import nstore from "../images/nav-store.png";
+import nsearch from "../images/nav-search.png";
+import { Input} from 'antd';
 
+const { placeholder } = Input;
+
+// const onSearch = value => console.log(value);
 export default function NavBar() {
     return (
         <div className="nav-bar">
-            <NavLink to="/tableware" className="nav-item" activeClassName="nav-item--active">
+            <div className="navbar-l"><img src ={nlogo} alt="nav-logo" className="navbar-logo"></img><div className="navbar-search"><div className="navsearch-text">Search Creeper Store</div><img src ={nsearch} alt="nsearch" className="navbar-searchicon"></img></div></div>
+            
+            <div className="navbar-r"><img src ={nstore} alt="nstore" className="navbar-icon"></img>
+            <img src ={nmember} alt="nmember" className="navbar-icon"></img>
+            <img src ={nbag} alt="nbag" className="navbar-icon"></img></div>
+
+            {/* <Search placeholder="Search Creeper Store" allowClear  onSearch={onSearch} className="navbar-search " /> */}
+            
+            {/* <NavLink to="/tableware" className="nav-item" activeClassName="nav-item--active">
                 Tableware
             </NavLink>
             <NavLink to="/cookware" className="nav-item" activeClassName="nav-item--active">
@@ -20,7 +37,7 @@ export default function NavBar() {
             </NavLink>
             <NavLink to="/furniture" className="nav-item" activeClassName="nav-item--active">
                 Furniture
-            </NavLink>
+            </NavLink> */}
         </div>
     );
 }
