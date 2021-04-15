@@ -52,12 +52,18 @@
 
 }
 
-.layout-header{
-  height: 500px;
-  background: rgb(179, 54, 54);
+.header{
+
+  height: 511px;
+  /* background: rgb(179, 54, 54); */
+  background: url(./images/top2.png);
+  background-repeat:no-repeat;
+  background-size: cover;
   padding: 0;
+  filter: blur(2.5px);
+  transform: scale(1.01)
 }
-.layout-footer {
+.footer {
   
 }
 
@@ -85,9 +91,7 @@
 }
 
   */
-.header {
-  
-}
+
 /*
 .header-title {
   color: white;
@@ -118,6 +122,7 @@
   width: 100vw;
   justify-content:space-between;
   align-items:center;
+  z-index: 1;
   /* width: 100vw; */
   /* flex-direction: row;
   justify-content: space-around;
