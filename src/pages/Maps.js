@@ -4,6 +4,7 @@ import AppFooter from "../components/Footer"
 import NavBar from "../components/NavBar";
 import ProductNav from "../components/ProductNav";
 import ProductList from "../components/ProductList";
+import ProductContent from "../components/ProductContent";
 
 // import ProductList from "../components/ProductList";
 // import products from "../json/products.json";
@@ -14,7 +15,9 @@ function Maps() {
         <NavBar />
         <ProductHeader/>
         <ProductNav/>
-        <ProductList/>
+        <ProductContent/>
+
+        
         <AppFooter/>  
     </Layout>
   );

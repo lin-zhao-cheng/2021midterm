@@ -3,6 +3,7 @@ import favor from '../images/small-favor-ico.png';
 import like from '../images/small-like-ico.png';
 import view from '../images/small-view-ico.png';
 
+
 export default function ProductItem( { product }) {
     return (
     //   <section className="col-md-6 col-lg-4 pt-4 p-md-3 p-lg-4">
