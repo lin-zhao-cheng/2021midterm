@@ -4,9 +4,9 @@ import nmember from "../images/nav-member.png";
 import nbag from "../images/nav-shopbag.png";
 import nstore from "../images/nav-store.png";
 import nsearch from "../images/nav-search.png";
-import { Input} from 'antd';
+// import { Input} from 'antd';
 
-const { placeholder } = Input;
+// const { placeholder } = Input;
 
 // const onSearch = value => console.log(value);
 export default function NavBar() {
