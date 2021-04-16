@@ -8,6 +8,8 @@ import maps from '../images/maps.png';
 import packs from '../images/texurepacks.png';
 import mods from '../images/mods.png';
 
+import { Link } from 'react-router-dom';
+
 const contentStyle = {
     height: '411px',
     color: '#fff',
@@ -38,14 +40,15 @@ export default function Content({title}) {
                     </Carousel>,
                </div>
            </div>
-
            <div className="content-shop">
                <div className="content-between"></div>
                <div className="cshop-area">
+               <Link to="/Maps" className="nav-item" activeClassName="nav-item--active">
                    <div className="cshop-box">
                         <img src={maps} alt="maps" className="cshop-img "></img>
                         <div className="cshop-masks"><div>MAPS</div></div>
                    </div>
+                </Link>
                    <div className="cshop-box">
                        <img src={packs} alt="packs" className="cshop-img "></img>
                        <div className="cshop-masks"><div >Texture Packs</div></div>

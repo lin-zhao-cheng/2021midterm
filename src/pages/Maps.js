@@ -1,19 +1,22 @@
 import { Layout } from 'antd';
-import AppHeader from "../components/Header"
+import ProductHeader from "../components/ProductHeader"
 import AppFooter from "../components/Footer"
 import NavBar from "../components/NavBar";
-import AppContent from "../components/Content"
+import ProductNav from "../components/ProductNav";
+import ProductList from "../components/ProductList";
+
 // import ProductList from "../components/ProductList";
 // import products from "../json/products.json";
 // const { Header, Content, Footer } = Layout;
-function Home() {
+function Maps() {
   return (
     <Layout className="container">
         <NavBar />
-        <AppHeader/>
-        <AppContent/>
+        <ProductHeader/>
+        <ProductNav/>
+        <ProductList/>
         <AppFooter/>  
     </Layout>
   );
 }
-export default Home;
+export default Maps;
