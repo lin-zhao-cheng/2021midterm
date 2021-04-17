@@ -837,6 +837,11 @@ margin-right: auto;
   background: rgba(255, 255, 255, 0.76);
   border-radius: 30px;
 
+
+}
+.login-from-bg-flex{
+  width: 700px;;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
