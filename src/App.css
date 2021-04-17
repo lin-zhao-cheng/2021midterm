@@ -56,6 +56,20 @@
 .content{
   background: #303E47;
 }
+.member-content{
+  background: rgba(78, 101, 115, 0.24);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.member-content-iner{
+  width: 1205px;
+  min-height: 100vh;
+  
+  background: #FFFFFF;
+}
 .footer {
   background: #FFFFFF;
 }
@@ -832,21 +846,17 @@ margin-right: auto;
 
   width: 700px;;
   height: 500px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
   background: rgba(255, 255, 255, 0.76);
   border-radius: 30px;
 
 
 }
-.login-from-bg-flex{
-  width: 700px;;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 .login-title{
   font-family: Berlin Sans FB,sans-serif;
   font-style: normal;
@@ -961,5 +971,58 @@ margin-right: auto;
   margin-top: 10px;
 }
 
+.foget-btn{
+  margin-top: 80px;
+}
 
+/* ------------------ */
+.member-img{
+  background-image: url(./images/member-bg.png);
+  width: 1205px;
+  height: 234px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.member-name-bg{
+  width: 228px;
+  height: 92px;
 
+  
+  background: rgba(10, 10, 10, 0.79);
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.member-name{
+  font-family:sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 44px;
+
+  
+  color: #FFFFFF;
+  
+  
+}
+.member-nav{
+  width: 1205px;
+  height: 77px;
+  left: 149px;
+  top: 313px;
+  
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+}
+.logout-img{
+  height: 50px;
+  width: 50px;
+  margin-right: 30px;
+}

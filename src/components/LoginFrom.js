@@ -1,4 +1,5 @@
 import {  Form, Input, Button, Checkbox  } from 'antd';
+import { Link } from 'react-router-dom';
 const layout = {
     labelCol: {
       span: 8,
@@ -49,9 +50,9 @@ export default function LoginFrom({title}) {
             ]}
           >
             <Input.Password />
-            <div className="login-form-forgot" >
+            <Link to='/Forgetpwr' className="login-form-forgot" >
             Forgot password?
-            </div>
+            </Link>
           </Form.Item>
     
           <Form.Item {...tailLayout} name="remember" valuePropName="checked" className="from-block">

@@ -1,6 +1,6 @@
 import LoginFrom from "../components/LoginFrom"
 import google from "../images/google-ico.png"
-
+import { Link } from 'react-router-dom';
 // import { Divider } from 'antd';
 
 export default function Logincontent({title}) {
@@ -17,7 +17,7 @@ export default function Logincontent({title}) {
                         <div className="btw-text"><div className="btw-line"></div></div>
                         <div className="login-from-r">
                             <div className="login-google-bottom  ">
-                                    <div className="login-google-text">Sign in with Google</div>
+                                    <Link to="/Member" className="login-google-text">Sign in with Google</Link>
                                     <img src={google} alt="" className="google-ico"/>
                             </div>
                             <div className="or-text">OR</div>

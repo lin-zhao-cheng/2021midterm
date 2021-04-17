@@ -1,21 +1,21 @@
 import { Layout } from 'antd';
-import Logincontent from "../components/Logincontent"
+import Forgetpwrcontent from "../components/Forgetpwrcontent"
 import Footer from "../components/BootomFooter"
 import NavBar from "../components/NavBar";
 
 // import ProductList from "../components/ProductList";
 import ProductContent from "../components/ProductContent";
 
-function Login() {
+function Forgetpwr() {
   return (
     
     <Layout className="container">
         <NavBar />
-        <Logincontent/>
+        <Forgetpwrcontent/>
         <Footer/>  
     </Layout>
 
 
   );
 }
-export default Login;
+export default Forgetpwr;
