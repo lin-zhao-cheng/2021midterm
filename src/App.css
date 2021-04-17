@@ -736,11 +736,13 @@ margin-right: auto;
   align-items: center;
   height: 70px;
   background: #1D262C;
+  z-index: 10;
   
 }
 .footer-foot-logo{
   width: 50px;
   height: 40px;
+  
 }
 
 /* ---------------------------------- */
@@ -761,6 +763,198 @@ margin-right: auto;
   align-items: center;
 }
 
+/* -------------------LoginFrom------------------------------- */
+.from-block{
+
+}
+.login-pwd{
+  margin-bottom: 5px;
+}
+.login-form-forgot{
+  /* margin-left: 10px; */
+  display: flex;
+  flex-direction: row-reverse;
+  color: rgb(0, 89, 255);
+}
+
+.login-btn{
+  
+  width: 150px;
+  height: 46px;
+  border-radius: 10px;
+  
+}
+.login-login-text{
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 26px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  
+  color: rgb(255, 255, 255);
+}
+/* .login-btn-area{
+  margin-left: 0;
+} */
+/* ----------Logincontent-------------------------- */
+.login-block{
+  position: relative;
+}
+.login-bg{
+  background-image: url(./images/login-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  opacity: 0.5;
+  transform: scale(1.02);
+  width: 100%;
+  height: 100vh;
+  z-index: -5;
+  
+}
+.login-from{
+  position: absolute;
+  
+  top:53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+
+}
+.login-from-bg{
+
+  width: 700px;;
+  height: 500px;
+
+  
+  background: rgba(255, 255, 255, 0.76);
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-title{
+  font-family: Berlin Sans FB,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #303E47;
+  margin-bottom: 10px;
+}
+.login-from-flex{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  align-items: center;
+  width: 100%;
+}
+.login-from-l{
+  display: flex;
+  justify-content: center;
+  width: 48%;
+
+  
+
+}
+.login-from-r{
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: row;
+  align-items: center;
+  align-self: center; */
+  justify-content: center;
+  align-items: center;
+  
+  width: 48%;
+
+}
+.btw-text{
+  display: flex;
+  
+  width: 4%;
+  justify-content: center;
+
+}
+.btw-line{
+  width: 5px;
+  height: 380px;
+
+  
+  background: #7C7C7C;
+
+}
+.or-text{
+  font-family: Berlin Sans FB,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #000000;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.login-google-bottom{
+  width: 290px;
+  height: 46px;
+
+  
+  background: #07cfc5;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.login-google-text{
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: rgb(255, 255, 255);
+}
+.google-ico{
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+}
+.login-sign-bottom{
+  width: 290px;
+  height: 46px;
+
+ 
+  background: #52d338;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
 
 
 

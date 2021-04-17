@@ -19,7 +19,7 @@ export default function NavBar() {
         </div>
 
             <div className="navbar-r"><img src ={nstore} alt="nstore" className="navbar-icon"></img>
-            <img src ={nmember} alt="nmember" className="navbar-icon"></img>
+            <Link to='/Login'><img src ={nmember} alt="nmember" className="navbar-icon"></img></Link>
             <img src ={nbag} alt="nbag" className="navbar-icon"></img></div>
 
             {/* <Search placeholder="Search Creeper Store" allowClear  onSearch={onSearch} className="navbar-search " /> */}

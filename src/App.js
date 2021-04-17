@@ -10,6 +10,7 @@ import Views from './pages/Views'
 import Latest from './pages/Latest'
 import Downloads from './pages/Downloads'
 import Product from './pages/Product'
+import Login from './pages/Login'
 // import ScrollToTop from './effect/ScrollToTop'
 // import { StoreProvider } from "./store";
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/Latest" component={Latest} />
         <Route path="/Downloads" component={Downloads} />
         <Route path="/Product/:productId" component={Product} />
+        <Route path="/Login" component={Login} />
         
       </Switch>
       
