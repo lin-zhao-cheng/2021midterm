@@ -4,25 +4,22 @@ import PdFooter from "../components/ProductFooter"
 import NavBar from "../components/NavBar";
 import ProductNav from "../components/ProductNav";
 // import ProductList from "../components/ProductList";
-import ProductContent from "../components/ProductContent";
+// import ProductContent from "../components/ProductContent";
 
 // import ProductList from "../components/ProductList";
 // import products from "../json/products.json";
 // const { Header, Content, Footer } = Layout;
-function Maps() {
+function Trending() {
   return (
-    
     <Layout className="container">
         <NavBar />
         <ProductHeader/>
         <ProductNav/>
-        <ProductContent/>
+        {/* <ProductContent/> */}
 
         
         <PdFooter/>  
     </Layout>
-
-
   );
 }
-export default Maps;
+export default Trending;

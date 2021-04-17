@@ -1,4 +1,4 @@
-// import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import nlogo from "../images/logo.png";
 import nmember from "../images/nav-member.png";
 import nbag from "../images/nav-shopbag.png";
@@ -7,7 +7,7 @@ import nsearch from "../images/nav-search.png";
 export default function NavBar() {
     return (
         <div className="nav-bar hideUp">
-            <div className="navbar-l"><img src ={nlogo} alt="nav-logo" className="navbar-logo"></img><div className="navbar-search"><div className="navsearch-text">Search Creeper Store</div><img src ={nsearch} alt="nsearch" className="navbar-searchicon"></img></div></div>
+            <Link to='/' className="navbar-l"><img src ={nlogo} alt="nav-logo" className="navbar-logo"></img><div className="navbar-search"><div className="navsearch-text">Search Creeper Store</div><img src ={nsearch} alt="nsearch" className="navbar-searchicon"></img></div></Link>
 
             <div className="navbar-r"><img src ={nstore} alt="nstore" className="navbar-icon"></img>
             <img src ={nmember} alt="nmember" className="navbar-icon"></img>

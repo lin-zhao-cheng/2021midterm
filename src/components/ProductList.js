@@ -9,13 +9,12 @@ import { Row, Col } from 'antd';
 
 export default function ProductList() {
   return (
-    <Row  gutter={[16, 32]}>
-      
+    <Row  gutter={[0, 32]}>  
     {products.map(product => (
         <Col 
           key={product.id} 
-
           xl={{ span: 8 }}
+          className="pd-block-outside"
         >
           <ProductItem product={product}/>
         </Col>
