@@ -2,12 +2,33 @@ import down from '../images/small-download-ico.png';
 import favor from '../images/small-favor-ico.png';
 import like from '../images/small-like-ico.png';
 import view from '../images/small-view-ico.png';
+import Blike from '../images/pddel-like-big-ico.png';
+import Bfavor from '../images/pddel-favor-big-ico.png';
+
+import { Link } from 'react-router-dom';
+import { Select } from 'antd';
+
+const { Option } = Select;
+
+function handleChange(value) {
+  console.log(`selected ${value}`);
+}
+
+
+
 
 
 function ProductDetailContent({ product }) {  
     return (
-        <div className="pddel-content">
+        <div className="pddel-content-big">
+            <Link to='/Maps'className="back-block">
+                 <div className="back-bottom"></div>
+                <div className="back-text">BACK</div>                        
+            </Link>
+            <div className="pddel-content">
                 <div className="pddel-img-block">
+
+
                      <img alt="" className="pddel-main-image" src={product.image}/> 
                      <div className="pddel-small-img-block">
                             <img alt="" className="pddel-small-image" src={product.dtlimg01}/> 
@@ -42,10 +63,45 @@ function ProductDetailContent({ product }) {
                         </div>
                         
                     </div>
-                    <div className="pddel-text-choose"></div>
-                    <div className="pddel-text-bottom"></div>
-                </div>
+                    <div className="pddel-text-choose">
+                        <div className="pddel-text-choose-area">
+                            <div className="version-block">
+                                <div className="version-text">Version:</div>
+                                <Select defaultValue="lucy" style={{ width: 120 }} onChange={handleChange}>
+                                    <Option value="jack">Jack</Option>
+                                    <Option value="lucy">Lucy</Option>
+                                    <Option value="disabled" disabled>
+                                        Disabled
+                                    </Option>
+                                    <Option value="Yiminghe">yiminghe</Option>
+                                </Select>
 
+                            </div>
+                            <div className="edition-block">
+                                <div className="edition-text">Edition:</div>
+                                    <Select defaultValue="lucy" style={{ width: 120 }} onChange={handleChange}>
+                                        <Option value="jack">Jack</Option>
+                                        <Option value="lucy">Lucy</Option>
+                                        <Option value="disabled" disabled>
+                                            Disabled
+                                        </Option>
+                                        <Option value="Yiminghe">yiminghe</Option>
+                                    </Select>
+                            </div>                            
+                        </div>
+
+                        <div>
+                            <img src={Blike} alt="" className="pddel-like-bottom"/>
+                            <img src={Bfavor} alt="" className="pddel-favor-bottom"/>                            
+                        </div>
+
+                    </div>
+                    <div className="pddel-text-bottom">
+                        <h1>ADD TO BAG</h1>
+                    
+                    </div>
+                </div>
+            </div>
 
         </div>
 

@@ -7,7 +7,16 @@ import nsearch from "../images/nav-search.png";
 export default function NavBar() {
     return (
         <div className="nav-bar hideUp">
-            <Link to='/' className="navbar-l"><img src ={nlogo} alt="nav-logo" className="navbar-logo"></img><div className="navbar-search"><div className="navsearch-text">Search Creeper Store</div><img src ={nsearch} alt="nsearch" className="navbar-searchicon"></img></div></Link>
+            
+        <div className="navbar-l">
+            <Link to='/'>
+                <img src ={nlogo} alt="nav-logo" className="navbar-logo"></img>
+            </Link>
+            <div className="navbar-search">
+                <div className="navsearch-text">Search Creeper Store</div>
+                <img src ={nsearch} alt="nsearch" className="navbar-searchicon"></img>
+            </div>
+        </div>
 
             <div className="navbar-r"><img src ={nstore} alt="nstore" className="navbar-icon"></img>
             <img src ={nmember} alt="nmember" className="navbar-icon"></img>

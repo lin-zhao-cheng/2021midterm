@@ -11,12 +11,13 @@ import Latest from './pages/Latest'
 import Downloads from './pages/Downloads'
 import Product from './pages/Product'
 // import ScrollToTop from './effect/ScrollToTop'
+// import { StoreProvider } from "./store";
 
 
 
 function App() {
   return (
-    
+    // <StoreProvider>
     <BrowserRouter>
     
       <Switch>
@@ -32,6 +33,7 @@ function App() {
       </Switch>
       
     </BrowserRouter>
+    // </StoreProvider>
   );
 }
 
