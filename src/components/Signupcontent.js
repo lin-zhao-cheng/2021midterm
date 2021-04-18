@@ -1,6 +1,5 @@
-
-import {  Form, Input, Button, Checkbox  } from 'antd';
 import { Link } from 'react-router-dom';
+import {  Form, Input, Button, Checkbox  } from 'antd';
 const layout = {
     labelCol: {
       span: 8,
@@ -23,16 +22,15 @@ const layout = {
     console.log('Failed:', errorInfo);
   };
 
-export default function Logincontent({title}) {
+export default function Signupcontent({title}) {
     return (
         <div className="login-block">
             <div className="login-bg"></div> 
             <div className="login-from">
                 
                 <div className="login-from-bg">
-                <div className=" fgt-title">Forget Password</div>
-                    <Form {...layout}name="basic" initialValues={{remember: true,}}onFinish={onFinish}onFinishFailed={onFinishFailed}>
-                    
+                    <Form {...layout}name="basic" initialValues={{remember: true,}}onFinish={onFinish}onFinishFailed={onFinishFailed} className="signup-from">
+                        <div className="signup-title">Register Account</div>
                         <Form.Item
                             label="Email"
                             name="email"
@@ -45,18 +43,48 @@ export default function Logincontent({title}) {
                         >
                             <Input allowClear/>
                         </Form.Item>
+                    
+                        <Form.Item
+                        // className="login-pwd"
+                            label="Password"
+                            name="password"
+                            rules={[
+                            {
+                                required: true,
+                                message: 'Please input your password!',
+                            },
+                            ]}
+                        >
+                            <Input.Password />
+
+                        </Form.Item>
+                        <Form.Item
+                        className="signup-pwd"
+                            label="Confirm Password"
+                            name="password"
+                            rules={[
+                            {
+                                required: true,
+                                message: 'Please input your password!',
+                            },
+                            ]}
+                        >
+                            <Input.Password />
+
+                        </Form.Item>
+                    
 
 
                     
                         <Form.Item {...tailLayout} >
-                            <Button type="primary" htmlType="submit" className="login-btn  foget-btn" >
-                            <div className="login-login-text">Send</div>
+                            <Button type="primary" htmlType="submit" className="login-btn signup-btn" >
+                            <div className="login-login-text">Sign Up</div>
                             </Button>
                             
 
                         </Form.Item>
                     </Form>
-                    <div className="  fgt-botm">
+                    <div className="signup-bottom">
                         <div className="signup-text">
                             Already have account ?
                         </div>
@@ -72,4 +100,3 @@ export default function Logincontent({title}) {
         </div>
     );
  }
- 

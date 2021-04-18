@@ -12,7 +12,7 @@ import Downloads from './pages/Downloads'
 import Product from './pages/Product'
 import Login from './pages/Login'
 import Forgetpwr from './pages/Forgetpwr'
-// import Signup from './pages/Signup'
+import Signup from './pages/Signup'
 import Member from './pages/Member'
 // import ScrollToTop from './effect/ScrollToTop'
 // import { StoreProvider } from "./store";
@@ -36,8 +36,8 @@ function App() {
         <Route path="/Login" component={Login} />
          <Route path="/Forgetpwr" component={Forgetpwr} />
          <Route path="/Member" component={Member} />
-       { /*<Route path="/Signup" component={Signup} />
-        <Route path="/Member" component={Member} /> */}
+         <Route path="/Signup" component={Signup}/>
+       { /* <Route path="/Member" component={Member} /> */}
         
       </Switch>
       

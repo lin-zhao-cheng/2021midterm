@@ -4,7 +4,7 @@ import Footer from "../components/BootomFooter"
 import NavBar from "../components/NavBar";
 
 // import ProductList from "../components/ProductList";
-import ProductContent from "../components/ProductContent";
+// import ProductContent from "../components/ProductContent";
 
 function Forgetpwr() {
   return (

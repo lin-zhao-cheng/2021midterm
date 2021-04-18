@@ -17,12 +17,12 @@ export default function Logincontent({title}) {
                         <div className="btw-text"><div className="btw-line"></div></div>
                         <div className="login-from-r">
                             <div className="login-google-bottom  ">
-                                    <Link to="/Member" className="login-google-text">Sign in with Google</Link>
+                                    <Link to='/Member' className="login-google-text">Sign in with Google</Link>
                                     <img src={google} alt="" className="google-ico"/>
                             </div>
                             <div className="or-text">OR</div>
                             <div className="login-sign-bottom ">
-                                    <div className="login-google-text">Sign Up</div> 
+                                    <Link to='/Signup'  className="login-google-text">Sign Up</Link > 
                             </div>
                         </div>                        
                     </div>
