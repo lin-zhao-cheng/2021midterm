@@ -14,6 +14,7 @@ import Login from './pages/Login'
 import Forgetpwr from './pages/Forgetpwr'
 import Signup from './pages/Signup'
 import Member from './pages/Member'
+import Shopbag from './pages/Shopbag'
 // import ScrollToTop from './effect/ScrollToTop'
 // import { StoreProvider } from "./store";
 
@@ -37,7 +38,7 @@ function App() {
          <Route path="/Forgetpwr" component={Forgetpwr} />
          <Route path="/Member" component={Member} />
          <Route path="/Signup" component={Signup}/>
-       { /* <Route path="/Member" component={Member} /> */}
+          <Route path="/Shopbag" component={Shopbag} />
         
       </Switch>
       
