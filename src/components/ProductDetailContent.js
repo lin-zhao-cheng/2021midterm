@@ -7,7 +7,7 @@ import Bfavor from '../images/pddel-favor-big-ico.png';
 
 import { Link } from 'react-router-dom';
 import { Select } from 'antd';
-
+import { Image } from 'antd';
 const { Option } = Select;
 
 function handleChange(value) {
@@ -28,13 +28,15 @@ function ProductDetailContent({ product }) {
             <div className="pddel-content">
                 <div className="pddel-img-block">
 
-
-                     <img alt="" className="pddel-main-image" src={product.image}/> 
-                     <div className="pddel-small-img-block">
-                            <img alt="" className="pddel-small-image" src={product.dtlimg01}/> 
-                            <img alt="" className="pddel-small-image" src={product.dtlimg02}/> 
-                            <img alt="" className="pddel-small-image" src={product.dtlimg03}/> 
-                     </div>
+                    <Image.PreviewGroup>
+                     <Image alt="" className="pddel-main-image" src={product.image}/> 
+                        <div className="pddel-small-img-block">
+                                <Image  alt="" className="pddel-small-image" src={product.dtlimg01}/> 
+                                <Image alt="" className="pddel-small-image" src={product.dtlimg02}/> 
+                                <Image alt="" className="pddel-small-image" src={product.dtlimg03}/> 
+                        </div>
+                    </Image.PreviewGroup>
+                     
 
                 </div>
                 <div className="pddel-text-block">

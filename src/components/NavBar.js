@@ -4,6 +4,9 @@ import nmember from "../images/nav-member.png";
 import nbag from "../images/nav-shopbag.png";
 import nstore from "../images/nav-store.png";
 import nsearch from "../images/nav-search.png";
+
+
+
 export default function NavBar() {
     return (
         <div className="nav-bar hideUp">
@@ -19,7 +22,9 @@ export default function NavBar() {
         </div>
 
             <div className="navbar-r">
+           
             <img src ={nstore} alt="nstore" className="navbar-icon"></img>
+           
             <Link to='/Login'><img src ={nmember} alt="nmember" className="navbar-icon"></img></Link>
             <Link to='Shopbag'><img src ={nbag} alt="nbag" className="navbar-icon"></img></Link>
             </div>

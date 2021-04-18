@@ -1,5 +1,6 @@
 @import '~antd/dist/antd.css';
 
+@font-face {font-family: "Berlin Sans FB Demi"; src: url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.eot"); src: url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.woff") format("woff"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b6539b6d3432c623d8d4f9cc2a29589e.svg#Berlin Sans FB Demi") format("svg"); }
 /* RWD Container */
 .container {
     width: 100vw;
@@ -99,7 +100,7 @@
   top: 0;
 }
 .header-text{
-  font-family: Berlin Sans FB;
+  font-family: 'Berlin Sans FB Demi';
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
@@ -130,7 +131,7 @@
   top: 0;
 }
 .ph-text{
-  font-family: Berlin Sans FB;
+  font-family: 'Berlin Sans FB Demi';
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
@@ -215,25 +216,11 @@
   margin-left: 8px;
 }
 
-/*
-.nav-item {
-  font-size: 1rem;
-  text-align: center;
-  cursor: pointer;
-  color: white;
-  opacity: 0.6;
-  transition: opacity .25s linear;
-}
 
-.nav-item:hover {
-  color: white;
-  opacity: 1;
-}
 
-.nav-item--active {
-  opacity: 1;
+.nstore-dropdown{
+
 }
-*/
 
 /* ----------ProductNav-------------------------------------------------------------------- */
 .pnav-bar{
@@ -279,7 +266,7 @@
   justify-self: center;
 }
 .pnav-search-text{
-  font-family: Berlin Sans FB;
+  font-family: 'Berlin Sans FB Demi';
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -318,7 +305,7 @@
 .contentnews-title{
   margin-top: 40px;
     align-self:center;
-    font-family: Berlin Sans FB;
+    font-family: 'Berlin Sans FB Demi';
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
@@ -383,7 +370,7 @@ height: 411px;
 	height: 100%;
 	text-align: center;
 	position: absolute;
-  font-family: Berlin Sans FB;
+  font-family: 'Berlin Sans FB Demi';
   font-style: normal;
   font-weight: normal;
   font-size: 64px;
@@ -429,7 +416,7 @@ height: 411px;
 }
 
 .content-about-buttom-text{
-  font-family: Berlin Sans FB;
+  font-family: 'Berlin Sans FB Demi';
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -550,8 +537,10 @@ margin-right: auto;
   width: 691px;
   height: 460px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 20px;
+    border-radius: 10px;
   }
+
+
 
 
 
@@ -564,6 +553,10 @@ margin-right: auto;
 .pddel-small-image{
   width: 217px;
   height: 135px;
+  border-radius: 10px;
+}
+.ant-image-mask{
+  
   border-radius: 10px;
 }
 
@@ -862,7 +855,7 @@ margin-right: auto;
 }
 
 .login-title{
-  font-family: Berlin Sans FB,sans-serif;
+  font-family: 'Berlin Sans FB Demi',sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -917,7 +910,7 @@ margin-right: auto;
 
 }
 .or-text{
-  font-family: Berlin Sans FB,sans-serif;
+  font-family: 'Berlin Sans FB Demi',sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -980,7 +973,7 @@ margin-right: auto;
 }
 .fgt-title{
   margin-bottom: 100px;
-  font-family: Berlin Sans FB,sans-serif;
+  font-family:'Berlin Sans FB Demi',sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -1052,7 +1045,7 @@ margin-right: auto;
   margin-right: 30px;
 }
 .signup-title{
-  font-family: Berlin Sans FB,sans-serif;
+  font-family: 'Berlin Sans FB Demi',sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -1088,7 +1081,7 @@ margin-right: auto;
 
 .mybag-title{
   display: flex;
-  font-family: Berlin Sans FB,sans-serif;
+  font-family: 'Berlin Sans FB Demi',sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
